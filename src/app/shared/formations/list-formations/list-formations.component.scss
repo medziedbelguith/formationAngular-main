@@ -1,0 +1,21 @@
+
+  /* Works on Firefox */
+  .titre-formation {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  .titre-formation::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .titre-formation::-webkit-scrollbar-track {
+    background: orange;
+  }
+  
+  .titre-formation::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 20px;
+    border: 3px solid orange;
+  }

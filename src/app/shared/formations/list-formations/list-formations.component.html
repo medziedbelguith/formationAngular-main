@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="aa-latest-blog-area">
+          <div class="row">
+
+
+             <!-- single latest blog -->
+             <div class="col-md-4 col-sm-4" *ngFor="let item of formations"  style="margin-bottom: 20px; padding:10px; ">
+              <div class="aa-latest-blog-single" style="background-color: rgb(163, 162, 162); padding:20px; padding-bottom: 40px;">
+                <figure class="aa-blog-img">                    
+                  <a [routerLink]="'/FormationDetails/'+item.id" ><img [src]="userService.baseURL +'/'+ item.imagePrincipale" alt="img"></a>  
+                </figure>
+
+                <div  style="text-align: center; position:relative; width: 100%;" *ngIf="item.formateur">
+                  <img [src]="userService.baseURL +'/'+ item.formateur.image" alt="img" style="border-radius: 50%; width:100px; position:absolute; left:0; right: 0px; top:-50px; z-index: 100; margin:auto; height: 100px;">
+                </div>
+
+                <div class="aa-blog-info" style=" text-align: center;">
+
+                  <br>
+                  <br>
+            
+                  <div class="titre-formation" style=" text-align: center; height: 200px; overflow: auto; margin-bottom: 10px; ">
+                    <h3 class="aa-blog-title"><a [routerLink]="'/FormationDetails/'+item.id" style="color: yellow; font-size: 20px;">{{item.nom}}</a></h3>
+                    
+                
+                    <p *ngFor="let ligne of item.descriptionsDessus" style="color: black; font-size: 17px;"> {{ligne.ligne}} </p> 
+                   
+                  </div>
+                    
+                    <a [routerLink]="'/FormationDetails/'+item.id" class="aa-read-mor-btn" style="float: left; background-color: blue; padding:5px 20px; color:white;">{{item.prixVente}} $</a>
+              
+                    <a [routerLink]="'/FormationDetails/'+item.id" class="aa-read-mor-btn" style="float: right; background-color: blue; padding:5px 20px; color:white;">Joind</a>
+            
+                </div>
+              </div>
+            </div>
+
+            
+            </div>
+
+            <div class="row">
+              <app-pagination *ngIf="!isLoading" [page]="page" [totalPage]="totalPage" (setPageEvent)="setPage($event)"></app-pagination>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+  

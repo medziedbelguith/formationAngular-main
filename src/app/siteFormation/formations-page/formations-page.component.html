@@ -1,0 +1,85 @@
+
+
+
+
+
+<!-- catg header banner section -->
+<section id="aa-catg-head-banner">
+    <img src="./assets/img/fashion/fashion-header-bg-8.jpg" alt="fashion img">
+    <div class="aa-catg-head-banner-area">
+      <div class="container">
+       <div class="aa-catg-head-banner-content">
+         <h2>Formations</h2>
+         <ol class="breadcrumb">
+           <li><a href="index.html">Home</a></li>         
+           <li class="active">Formations</li>
+         </ol>
+       </div>
+      </div>
+    </div>
+</section>
+   <!-- / catg header banner section -->
+
+    
+   
+   <section id="aa-product" style="background-color: #7a0f3e;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            
+          <br>
+          <br>
+
+            <div class="aa-product-area" *ngIf="categories.length != 0">
+              <div class="aa-product-inner">
+                <!-- start prduct navigation -->
+                 <ul class="nav nav-tabs aa-products-tab">
+                    <li class="active"><a href="#tout" data-toggle="tab">Tout</a></li>
+                 
+                    <li><a href="#{{categorie2.id}}" data-toggle="tab">{{categorie2.titre}}</a></li>
+                    <li *ngFor="let item of categories"><a href="#{{item.id}}" data-toggle="tab">{{item.titre}}</a></li>
+                 </ul>
+
+                 <br><br>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <!-- Start men product category -->
+                    <div class="tab-pane fade in active" id="tout">
+                      
+                      <app-list-formations [categories]="categoriesEmpty" ></app-list-formations>
+
+                    </div>
+                    
+                    <div class="tab-pane fade" id="{{categorie2.id}}">
+                      
+                      <app-list-formations [categories]="[{categories: categorie2.titre}]"></app-list-formations>
+
+                    </div>
+                    <!-- / men product category -->
+                    <!-- start women product category -->
+                    <div class="tab-pane fade" id="{{item.id}}" *ngFor="let item of categories">
+                    
+                        <app-list-formations [categories]="[{categories: item.titre}]"></app-list-formations>
+                    
+                    </div>
+                   
+                    <!-- / electronic product category -->
+                  </div>
+                  <!-- quick view modal -->                  
+                            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+             
+    
+   
+  <!-- footer -->  
+  <app-footer-formation></app-footer-formation>
+  <!-- / footer -->
+
+  

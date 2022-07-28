@@ -1,0 +1,162 @@
+
+
+
+
+  <!-- catg header banner section -->
+  <section id="aa-catg-head-banner">
+    <img src="./assets/img/fashion/fashion-header-bg-8.jpg" alt="fashion img">
+    <div class="aa-catg-head-banner-area">
+      <div class="container">
+       <div class="aa-catg-head-banner-content">
+         <h2>Event</h2>
+         <ol class="breadcrumb">
+           <li><a href="index.html">Home</a></li>         
+           <li class="active">Event</li>
+         </ol>
+       </div>
+      </div>
+    </div>
+   </section>
+   <!-- / catg header banner section -->
+ 
+
+   <app-loading *ngIf="isLoading"></app-loading>
+
+   <!-- Blog Archive -->
+   <section id="aa-blog-archive" *ngIf="formation" style="background-color: #e5e5e5;">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12">
+           <div class="aa-blog-archive-area">
+             <div class="row">
+               <div class="col-md-12">
+                 <!-- Blog details -->
+                 <div class="aa-blog-content aa-blog-details">
+                   <article class="aa-blog-content-single">                        
+                  
+                      <figure class="aa-blog-img" style="text-align: center;">
+                        <a href="" style=" display:block; margin:auto; width: 100%;"><img   [src]="userService.baseURL +'/'+ formation.image" alt="fashion img"></a>
+                      </figure>
+
+                      <div class="aa-article-bottom">
+                    
+                     </div>
+
+                     <div class="container">
+                        <div class="col-md-12">
+
+                            <div class="row">
+
+                                <h1 style="color: black; font-weight: 900;">{{formation.titre1}}</h1>
+
+                                <br>
+                                <br>
+                                <ul class="style-list" style="margin-left: 0px;">
+                                
+                                    <li style="display: inline;" (click)="changeDetails(1)" > <span class="button-style" *ngIf="idDetails == 1">Descriptions</span> <span  *ngIf="idDetails != 1">Descriptions</span> </li>
+                                    <li style="display: inline;" (click)="changeDetails(2)" ><span class="button-style" *ngIf="idDetails == 2">Adresse</span> <span  *ngIf="idDetails != 2">Adresse</span>  </li>
+                                    <li style="display: inline;" (click)="changeDetails(3)" ><span class="button-style" *ngIf="idDetails == 3">Date && Heure</span> <span  *ngIf="idDetails != 3">Date && Heure</span>  </li>
+                                    <li style="display: inline;" (click)="changeDetails(4)" ><span class="button-style" *ngIf="idDetails == 4"> Formateur</span> <span  *ngIf="idDetails != 4"> Formateur</span> </li>
+                                
+                                </ul>
+                            </div>
+
+                            <div class="row style-block" *ngIf="idDetails == 1">
+
+                              <h2 style="text-align: center;">
+                                  {{formation.titre2}}      
+                              </h2>
+
+                              <ul>
+                                <li *ngFor="let ligne of formation.descriptions"> {{ligne.ligne}} </li>
+                              </ul>
+          
+                              <br>
+
+                              <button *ngIf="!dejaInscrire && !autorized"  (click)="openCommande(formation.id)" class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> Rejoindre </button>
+                              <button *ngIf="dejaInscrire"  class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> On Attends confirmation</button>
+                              <button *ngIf="autorized"  class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> Rejoindre Déja</button>
+                           
+                            </div>
+
+                            <div class="row style-block" *ngIf="idDetails == 2">
+
+                                <h2 style="text-align: center;">
+                                    {{formation.titre2}}      
+                                </h2>
+
+                                <p> <span style="font-weight: 900;">Adresse : </span> {{formation.adresse}}</p>
+
+                                <p> <span style="font-weight: 900;">Telephone :  </span>{{formation.telephone}}</p>
+
+                                <br>
+  
+                                <button *ngIf="!dejaInscrire && !autorized"  (click)="openCommande(formation.id)" class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> Rejoindre </button>
+                                <button *ngIf="dejaInscrire"  class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> On Attends confirmation</button>
+                                <button *ngIf="autorized"  class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> Rejoindre Déja</button>
+                             
+                              </div>
+
+                              <div class="row style-block" *ngIf="idDetails == 3">
+
+                                <h2 style="text-align: center;">
+                                    {{formation.titre2}}      
+                                </h2>
+
+                                <p> <span style="font-weight: 900;">Date : </span> {{formation.date}}</p>
+
+                                <p> <span style="font-weight: 900;">Heure de debut :  </span>{{formation.timeDepart}}</p>
+
+                                <p>  <span style="font-weight: 900;">Heure de Fin :</span> {{formation.timeEnd}}</p>
+
+            
+                                <br>
+  
+                                <button *ngIf="!dejaInscrire && !autorized"  (click)="openCommande(formation.id)" class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> Rejoindre </button>
+                                <button *ngIf="dejaInscrire"  class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> On Attends confirmation</button>
+                                <button *ngIf="autorized"  class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> Rejoindre Déja</button>
+                             
+                              </div>
+
+                              <div class="row style-block" *ngIf="idDetails == 4">
+                               <h2 style="text-align: center;">
+                                  {{formation.titre2}}      
+                              </h2>
+                               
+                                <img [src]="userService.baseURL +'/'+ formation.imageFormateur" alt="fashion img">
+
+                                <p> <span style="font-weight: 900;">Nom :  </span>{{formation.nomFormateur}}</p>
+
+                                <p>  <span style="font-weight: 900;">Specialites :</span> {{formation.specialites}}</p>
+
+            
+                                <br>
+  
+                                <button *ngIf="!dejaInscrire && !autorized"  (click)="openCommande(formation.id)" class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> Rejoindre </button>
+                                <button *ngIf="dejaInscrire"  class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> On Attends confirmation</button>
+                                <button *ngIf="autorized"  class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> Rejoindre Déja</button>
+                             
+                              </div>
+
+
+                        </div>
+
+                     </div>
+
+                   </article>
+                  
+                 </div>
+               </div>
+ 
+              
+             </div>           
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <app-inscription-formation-modal isEvent="1" [isOpenCommande]="isOpenCommande" [idCommande]="idCommande" (closeCommandeEvent)="closeCommande()" ></app-inscription-formation-modal> 
+  
+   <app-footer-formation></app-footer-formation>
+

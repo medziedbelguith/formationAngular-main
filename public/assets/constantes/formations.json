@@ -1,0 +1,508 @@
+[
+
+    {
+        "id":1,
+        "titre":"إدارة الاعمال",
+        "image":"./assets/img/categories/téléchargement.png",
+        "route":"/FormationDetails",
+        "prixVente": 500,
+        "prixPromo": 400,
+        "coach" : {
+            "id":5,
+            "nom":"coach Jamel Hathri",
+            "specialites": "إدارة الاعمال",
+            "image":"./assets/img/categories/téléchargement.png"
+        },
+        "categories": [
+            {
+                "categorie" : "إدارة الاعمال"
+            }
+        ],
+        "descriptionGenerale":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor omnis ipsam, nisi voluptate reprehenderit consectetur, illum possimus asperiores. Sed ad natus saepe, distinctio veniam? Error natus, dolore rem beatae, dolorum, aliquid sapiente ipsa voluptatum impedit vel maiores nobis totam! Ad dicta obcaecati dolore natus deleniti qui, hic animi, nobis cumque fuga non sapiente neque voluptatum nisi perspiciatis, molestiae vero distinctio officia, laboriosam. Veritatis assumenda nam est fuga rem asperiores repellat veniam magnam, molestias iusto quas facilis, et eaque. Est magni voluptas quibusdam saepe quis laudantium atque maxime itaque optio ipsam qui voluptates beatae, perspiciatis fugiat tempora maiores, odio, sed non!",
+        "description":[
+            {
+                "ligne":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor omnis ipsam, nisi voluptate reprehenderit consectetur, illum possimus asperiores. Sed ad natus saepe, distinctio veniam? Error natus, dolore rem beatae, dolorum, aliquid sapiente ipsa voluptatum impedit vel maiores nobis totam! Ad dicta obcaecati dolore natus deleniti qui, hic animi, nobis cumque fuga non sapiente neque voluptatum nisi perspiciatis, molestiae vero distinctio officia, laboriosam. Veritatis assumenda nam est fuga rem asperiores repellat veniam magnam, molestias iusto quas facilis, et eaque. Est magni voluptas quibusdam saepe quis laudantium atque maxime itaque optio ipsam qui voluptates beatae, perspiciatis fugiat tempora maiores, odio, sed non!"
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            }
+            
+        ],
+        "video":"",
+        "chapitres":[
+            {
+               "id":1,
+               "titre":"titre chaptre 1",
+               "description":"",
+               "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+               "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            }
+        ]
+
+    },
+    {
+        "id":2,
+        "titre":"إدارة الاعمال",
+        "image":"./assets/img/categories/téléchargement.png",
+        "route":"/FormationDetails",
+        "prixVente": 500,
+        "prixPromo": 400,
+        "coach" : {
+            "id":5,
+            "nom":"coach Jamel Hathri",
+            "specialites": "إدارة الاعمال",
+            "image":"./assets/img/categories/téléchargement.png"
+        },
+        "categories": [
+            {
+                "categorie" : "إدارة الاعمال"
+            }
+        ],
+        "description":[
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            }
+            
+        ],
+        "video":"",
+        "chapitres":[
+            {
+               "id":1,
+               "titre":"titre chaptre 1",
+               "description":"",
+               "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+               "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            }
+        ]
+
+    },
+
+    {
+        "id":3,
+        "titre":"إدارة الاعمال",
+        "image":"./assets/img/categories/téléchargement.png",
+        "route":"/FormationDetails",
+        "prixVente": 500,
+        "prixPromo": 400,
+        "coach" : {
+            "id":5,
+            "nom":"coach Jamel Hathri",
+            "specialites": "إدارة الاعمال",
+            "image":"./assets/img/categories/téléchargement.png"
+        },
+        "categories": [
+            {
+                "categorie" : "إدارة الاعمال"
+            }
+        ],
+        "description":[
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            }
+            
+        ],
+        "video":"",
+        "chapitres":[
+            {
+               "id":1,
+               "titre":"titre chaptre 1",
+               "description":"",
+               "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+               "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            }
+        ]
+
+    },
+    {
+        "id":4,
+        "titre":"إدارة الاعمال",
+        "image":"./assets/img/categories/téléchargement.png",
+        "route":"/FormationDetails",
+        "prixVente": 500,
+        "prixPromo": 400,
+        "coach" : {
+            "id":5,
+            "nom":"coach Jamel Hathri",
+            "specialites": "إدارة الاعمال",
+            "image":"./assets/img/categories/téléchargement.png"
+        },
+        "categories": [
+            {
+                "categorie" : "إدارة الاعمال"
+            }
+        ],
+        "description":[
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            }
+            
+        ],
+        "video":"",
+        "chapitres":[
+            {
+               "id":1,
+               "titre":"titre chaptre 1",
+               "description":"",
+               "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+               "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            }
+        ]
+
+    },
+    {
+        "id":5,
+        "titre":"إدارة الاعمال",
+        "image":"./assets/img/categories/téléchargement.png",
+        "route":"/FormationDetails",
+        "prixVente": 500,
+        "prixPromo": 400,
+        "coach" : {
+            "id":5,
+            "nom":"coach Jamel Hathri",
+            "specialites": "إدارة الاعمال",
+            "image":"./assets/img/categories/téléchargement.png"
+        },
+        "categories": [
+            {
+                "categorie" : "إدارة الاعمال"
+            }
+        ],
+        "description":[
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            }
+            
+        ],
+        "video":"",
+        "chapitres":[
+            {
+               "id":1,
+               "titre":"titre chaptre 1",
+               "description":"",
+               "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+               "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            }
+        ]
+
+    },
+    {
+        "id":6,
+        "titre":"إدارة الاعمال",
+        "image":"./assets/img/categories/téléchargement.png",
+        "route":"/FormationDetails",
+        "prixVente": 500,
+        "prixPromo": 400,
+        "coach" : {
+            "id":5,
+            "nom":"coach Jamel Hathri",
+            "specialites": "إدارة الاعمال",
+            "image":"./assets/img/categories/téléchargement.png"
+        },
+        "categories": [
+            {
+                "categorie" : "إدارة الاعمال"
+            }
+        ],
+        "description":[
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            }
+            
+        ],
+        "video":"",
+        "chapitres":[
+            {
+               "id":1,
+               "titre":"titre chaptre 1",
+               "description":"",
+               "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+               "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            }
+        ]
+
+    },
+    {
+        "id":7,
+        "titre":"إدارة الاعمال",
+        "image":"./assets/img/categories/téléchargement.png",
+        "route":"/FormationDetails",
+        "prixVente": 500,
+        "prixPromo": 400,
+        "coach" : {
+            "id":5,
+            "nom":"coach Jamel Hathri",
+            "specialites": "إدارة الاعمال",
+            "image":"./assets/img/categories/téléchargement.png"
+        },
+        "categories": [
+            {
+                "categorie" : "إدارة الاعمال"
+            }
+        ],
+        "description":[
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            }
+            
+        ],
+        "video":"",
+        "chapitres":[
+            {
+               "id":1,
+               "titre":"titre chaptre 1",
+               "description":"",
+               "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+               "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            }
+        ]
+
+    },
+    {
+        "id":8,
+        "titre":"إدارة الاعمال",
+        "image":"./assets/img/categories/téléchargement.png",
+        "route":"/FormationDetails",
+        "prixVente": 500,
+        "prixPromo": 400,
+        "coach" : {
+            "id":5,
+            "nom":"coach Jamel Hathri",
+            "specialites": "إدارة الاعمال",
+            "image":"./assets/img/categories/téléchargement.png"
+        },
+        "categories": [
+            {
+                "categorie" : "إدارة الاعمال"
+            }
+        ],
+        "description":[
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            },
+            {
+                "ligne":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae."
+            }
+            
+        ],
+        "video":"",
+        "chapitres":[
+            {
+               "id":1,
+               "titre":"titre chaptre 1",
+               "description":"",
+               "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+               "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            },
+            {
+                "id":1,
+                "titre":"titre chaptre 1",
+                "description":"",
+                "video":"Eligendi sunt ratione praesentium, tempore esse, iure ut dolor consequuntur eum ducimus commodi sequi beatae.",
+                "fichierPdf":"chap1.pdf"
+            }
+        ]
+
+    },
+    {
+        "id":9,
+        "titre":"إدارة الاعمال",
+        "image":"./assets/img/categories/téléchargement.png",
+        "route":"/FormationDetails",
+        "prixVente": 500,
+        "prixPromo": 400,
+        "coach" : {
+            "id":5,
+            "nom":"coach Jamel Hathri",
+            "specialites": "إدارة الاعمال"
+        },
+        "categories": [
+            {
+                "categorie" : "إدارة الاعمال"
+            }
+        ]
+    },
+    {
+        "id":10,
+        "titre":"إدارة الاعمال",
+        "image":"./assets/img/categories/téléchargement.png",
+        "route":"/FormationDetails",
+        "prixVente": 500,
+        "prixPromo": 400,
+        "coach" : {
+            "id":5,
+            "nom":"coach Jamel Hathri",
+            "specialites": "إدارة الاعمال"
+        },
+        "categories": [
+            {
+                "categorie" : "إدارة الاعمال"
+            }
+        ]
+    },
+    {
+        "id":11,
+        "titre":"إدارة الاعمال",
+        "image":"./assets/img/categories/téléchargement.png",
+        "route":"/FormationDetails",
+        "prixVente": 500,
+        "prixPromo": 400,
+        "coach" : {
+            "id":5,
+            "nom":"coach Jamel Hathri",
+            "specialites": "إدارة الاعمال"
+        },
+        "categories": [
+            {
+                "categorie" : "إدارة الاعمال"
+            }
+        ]
+    }
+
+]

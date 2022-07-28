@@ -1,0 +1,28 @@
+[
+
+    {
+        "id":1,
+        "titre":"إدارة الاعمال",
+        "image":"./assets/img/categories/téléchargement.png",
+        "route":"/IdaretAmel"
+    },
+    {
+        "id":2,
+        "titre":"تنمية ذاتية",
+        "image":"./assets/img/categories/téléchargement.jfif",
+        "route":"/CategorieDetails"
+    },
+    {
+        "id":3,
+        "titre":"الطفل و العلاقات الاسرية و التربوية",
+        "image":"./assets/img/categories/téléchargement (1).jfif",
+        "route":"/CategorieDetails"
+    },
+    {
+        "id":4,
+        "titre":"علوم النفس",
+        "image":"./assets/img/categories/téléchargement (2).jfif",
+        "route":"/CategorieDetails"
+    }
+
+]

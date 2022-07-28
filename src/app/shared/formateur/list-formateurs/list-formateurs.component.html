@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="aa-latest-blog-area">
+
+          <div class="row">
+
+            <app-loading *ngIf="isLoading"></app-loading>
+          
+            <br>
+            <br>
+            
+
+            <div class="col-md-3 col-sm-3" *ngFor="let item of formateurs" >
+              <div class="aa-latest-blog-single"  style="margin-bottom: 20px; padding:20px; background-color: rgba(0, 0, 0, 0.363); border-radius:15%; height: 400px !important; margin:5px">
+                <figure class="aa-blog-img">                    
+                  <a [routerLink]="'/FormateurDetails/'+item.id"><img [src]="userService.baseURL+'/'+item.image" alt="img" style="border-radius: 50%;"></a>  
+                </figure>
+                <div class="aa-blog-info">
+                  <h3 class="aa-blog-title" style="text-align: center;"><a [routerLink]="'/FormateurDetails/'+item.id" style=" color:white; font-size: 30px; font-weight: 900;">{{item.nom}}</a></h3>
+                  <p style="text-align: center;" >     <a [routerLink]="'/FormateurDetails/'+item.id" class="aa-read-mor-btn" style="text-align: center;  font-size: 20px; font-weight: 700; ">{{item.specialites}}<span class="fa fa-long-arrow-right"></span></a>
+                  </p> 
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <div class="row" style="text-align: center;">
+            <app-pagination *ngIf="!isLoading" [page]="page" [totalPage]="totalPage" (setPageEvent)="setPage($event)"></app-pagination>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</div>
+

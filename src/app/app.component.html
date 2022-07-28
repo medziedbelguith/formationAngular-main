@@ -1,0 +1,9 @@
+
+<app-navbar-site-formation></app-navbar-site-formation>
+
+<router-outlet></router-outlet>
+
+<app-inscrire-popus [isOpenCommande]="isOpenRegister" [idCommande]="idCommande" (closeCommandeEvent)="closeCommande()" ></app-inscrire-popus> 
+  
+<app-login-popups [isOpenCommande]="isOpenLogin" [idCommande]="idCommande" (closeCommandeEvent)="closeCommande()" ></app-login-popups> 
+  

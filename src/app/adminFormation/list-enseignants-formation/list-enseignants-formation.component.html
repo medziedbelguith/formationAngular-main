@@ -1,0 +1,123 @@
+
+
+ 
+
+
+ <section id="aa-catg-head-banner">
+   <img src="./assets/img/fashion/fashion-header-bg-8.jpg" alt="fashion img">
+   <div class="aa-catg-head-banner-area">
+     <div class="container">
+      <div class="aa-catg-head-banner-content">
+        <h2>Formateurs</h2>
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>         
+          <li class="active">Formateurs</li>
+        </ol>
+      </div>
+     </div>
+   </div>
+  </section>
+  <!-- / catg header banner section -->
+
+  <!-- product category -->
+  <section id="aa-product-category">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-9 col-md-9 col-sm-8 col-md-push-3">
+          <div class="aa-product-catg-content">
+           
+            <div class="aa-product-catg-body">
+            
+
+
+             <h2>Liste de Formateurs</h2>
+                                       
+                                      
+             <app-loading *ngIf="isLoading"></app-loading>
+                 
+             
+             <div class="table-responsive">
+               <table class="table" style="min-height: 300px;">
+                 <thead>
+                   <tr>
+                     <th>Nom</th>
+                     <th>Specialites</th>
+                     <th>email</th>
+                     <th>Téléphone</th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr *ngIf="formations.length == 0">
+                       
+                      <th colspan="8" style="text-align: center;">Vide</th>
+                       
+                   </tr>
+            
+                   <tr *ngFor="let item of formations">
+                       
+                     <td>{{item.nom}}</td>
+                     <td>{{item.specialites}}</td>
+                     <td>{{item.email}}</td>
+                     <td>{{item.telephone}}</td>
+                     
+                     <td>
+                      <button *ngIf="item.isActive == 1" class="btn btn-danger"  (click)="activerFormateur(item.id, 0)">
+                           Desactiver
+                      </button>
+
+                      <button *ngIf="item.isActive == 0" class="btn btn-info"  (click)="activerFormateur(item.id, 1)">
+                           Activer
+                      </button>
+                     </td>
+
+                     <td>
+                       <button class="btn btn-danger "  [routerLink]="'/FormateurDetails/'+item.id" >
+                         Profil + Formations
+                       </button>
+                     </td>
+                  
+                   
+                  
+                     <td>
+                       <a class="btn btn-danger " style="margin-right: 5px;" [routerLink]="'/deleteUser/'+item.id" >
+                         <i class="fa fa-trash" style="color: white;" ></i>
+                       </a>
+                      
+                     </td>
+                      
+                  </tr>
+            
+                </tbody>
+               </table>
+
+               <app-pagination *ngIf="!isLoading" [page]="page" [totalPage]="totalPage" (setPageEvent)="setPage($event)"></app-pagination>
+
+
+             </div>
+             
+             
+            <!-- / quick view modal -->   
+            </div>
+           </div>
+        </div>
+
+             
+             
+                    
+        <div class="col-lg-3 col-md-3 col-sm-4 col-md-pull-9">
+
+            <app-sidebar-admin> </app-sidebar-admin>
+
+        </div>
+       
+      </div>
+    </div>
+  </section>
+ 
+  <app-footer-formation></app-footer-formation>
+
+

@@ -1,0 +1,23 @@
+<div id="myModalCommande" [class]="classCss">
+
+    <!-- Modal content -->
+    <div class="modal-contentCommande" >
+      <span class="closeCommande" (click)="closeCommande()">&times;</span>
+      <p style="font-weight: 800; font-size: 18px;">Demand</p>
+      <hr style="width: 100%;">
+  
+      <p>Hello, you must already register to access our training !!</p>
+  
+            
+      <button  (click)="goLogin()" class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto; margin-right: 5px;"> Connecter</button>
+
+      <button  (click)="goRegister()" class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto; margin-right: 5px;"> Register </button>
+
+      <button (click)="closeCommande()" class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto; margin-right: 5px;"> cancel </button>
+
+      <app-loading *ngIf="isLoading"></app-loading>
+                                              
+     <br> <br> 
+    </div>
+  
+  </div>

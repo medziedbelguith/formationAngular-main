@@ -1,0 +1,138 @@
+<div id="myModalCommande" [class]="classCss">
+
+    <!-- Modal content -->
+    <div class="modal-contentCommande" >
+      <span class="closeCommande" (click)="closeCommande()">&times;</span>
+      <p style="font-weight: 800; font-size: 18px;">Registration</p>
+      <hr style="width: 100%;">
+  
+       <div class="row">
+          <div class="col-md-12">
+           <div class="aa-myaccount-area">         
+               <div class="row">
+                   
+                   <div class="col-sm-12" id="content">
+                     <h1 style="color:black;">Create an account</h1>
+                     <p>If you already have an account with us, please login to <a [routerLink]="['/login']">the login page</a>.</p>
+                     
+                     <div class="form-check-inline" style="text-align: center;">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" (click)="setMode(1)" checked>
+                       <label class="form-check-label" for="flexRadioDefault1">
+                        candidate
+                       </label>
+   
+                       <input style="margin-left:10px;" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" (click)="setMode(2)" >
+                       <label class="form-check-label" for="flexRadioDefault2">
+                         Trainer
+                       </label>
+                     </div>
+   
+                     <form [formGroup]="formC" class="form-horizontal" >
+                         <fieldset id="account" style="margin-top: 20px;">
+                             <legend>Your personal information</legend>
+                           
+                             <div class="form-group non-required">
+                                 <label for="input-firstname" class="col-sm-2 control-label">first name</label>
+                                 <div class="col-sm-10">
+                                     <input type="text" class="form-control" id="input-firstname" formControlName="nom" placeholder="first name" value="" name="firstname">
+                                 </div>
+                             </div>
+                             <div class="form-group non-required">
+                                 <label for="input-lastname" class="col-sm-2 control-label">Last name</label>
+                                 <div class="col-sm-10">
+                                     <input type="text" class="form-control" id="input-lastname" formControlName="prenom" placeholder="Last name" value="" name="lastname">
+                                 </div>
+                             </div>
+                             <div class="form-group required">
+                                 <label for="input-email" class="col-sm-2 control-label">E-mail</label>
+                                 <div class="col-sm-10">
+                                     <input type="email" class="form-control" id="input-email" formControlName="email" placeholder="Email" value="" name="email">
+                                 </div>
+                             </div>
+                             <div class="form-group required">
+                                 <label for="input-telephone" class="col-sm-2 control-label">Phone</label>
+                                 <div class="col-sm-10">
+                                     <input type="tel" class="form-control" id="input-telephone" formControlName="telephone" placeholder="Phone" value="" name="telephone">
+                                 </div>
+                             </div>
+                            
+                         </fieldset>
+                         
+                         <fieldset id="address" style="margin-top: 20px;">
+         
+                             <legend>Your address</legend>
+                             
+                             <div class="form-group non-required">
+                                 <label for="input-address-1" class="col-sm-2 control-label">Address</label>
+                                 <div class="col-sm-10">
+                                     <input type="text" class="form-control" id="input-address-1" formControlName="adresse" placeholder="Addresse" value="" name="address_1">
+                                 </div>
+                             </div>
+                             
+                             <div class="form-group non-required">
+                                 <label for="input-city" class="col-sm-2 control-label">city</label>
+                                 <div class="col-sm-10">
+                                     <input type="text" class="form-control" id="input-city" formControlName="ville" placeholder="city" value="" name="city">
+                                 </div>
+                             </div>
+                             
+                             <div class="form-group non-required">
+                                 <label for="input-city" class="col-sm-2 control-label">country</label>
+                                 <div class="col-sm-10">
+                                     <input type="text" class="form-control" id="input-city" formControlName="pays" placeholder="country" value="" name="city">
+                                 </div>
+                             </div>
+         
+                             <div class="form-group non-required">
+                                 <label for="input-postcode" class="col-sm-2 control-label">Postal code</label>
+                                 <div class="col-sm-10">
+                                     <input type="text" class="form-control" id="input-postcode" formControlName="codePostal" placeholder="Postal code" value="" name="postcode">
+                                 </div>
+                             </div>
+                       
+                         </fieldset>
+                         
+                         <fieldset style="margin-top: 20px;">
+                             <legend>Your password</legend>
+                             <div class="form-group required">
+                                 <label for="input-password" class="col-sm-2 control-label">Password</label>
+                                 <div class="col-sm-10">
+                                     <input type="password" class="form-control" formControlName="password" value="" name="password">
+                                 </div>
+                             </div>
+                             <div class="form-group required">
+                                 <label for="input-confirm" class="col-sm-2 control-label">Confirm password</label>
+                                 <div class="col-sm-10">
+                                     <input type="password" class="form-control"  formControlName="confirmePassword" value="" name="confirm">
+                                 </div>
+                             </div>
+                         </fieldset>
+                        
+                         <fieldset style="border:red solid 2px;" *ngIf="isErreurs">
+                           <p style="color: red; padding: 2px 5px;">
+                             <span *ngFor="let e of erreurString">  {{e}} <br> </span> 
+                           </p>
+                         </fieldset>
+         
+                         <app-loading *ngIf="isLoading"></app-loading>
+         
+                         <div class="buttons">
+                             <div class="pull-right">
+                                 <input type="submit" class="btn btn-primary" value="Continue" (click)="register()">
+                             </div>
+                         </div>
+         
+                     </form>
+                 </div>
+         
+         
+                          
+            </div>
+          </div>
+        </div>
+      </div>
+                                              
+     <br> <br> 
+    </div>
+  
+  </div>

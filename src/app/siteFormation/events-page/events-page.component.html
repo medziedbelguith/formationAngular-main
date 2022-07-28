@@ -1,0 +1,117 @@
+
+
+
+
+<!-- catg header banner section -->
+<section id="aa-catg-head-banner">
+    <img src="./assets/img/fashion/fashion-header-bg-8.jpg" alt="fashion img">
+    <div class="aa-catg-head-banner-area">
+      <div class="container">
+       <div class="aa-catg-head-banner-content">
+         <h2>Events</h2>
+         <ol class="breadcrumb">
+           <li><a href="index.html">Home</a></li>         
+           <li class="active">Events</li>
+         </ol>
+       </div>
+      </div>
+    </div>
+</section>
+   <!-- / catg header banner section -->
+
+   
+  <section id="aa-product" style="padding-top: 50px; background-color: brown;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+           
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="aa-latest-blog-area">
+                      <div class="row">
+            
+                        <!-- single latest blog -->
+                        <div class="col-md-4 col-sm-4" *ngFor="let item of events" style="margin-bottom: 20px; padding:10px;">
+                          <div class="aa-latest-blog-single" style="background-color: rgb(163, 162, 162); padding:0px;">
+                         
+                          
+                            <figure class="aa-blog-img"  style="position:relative;">                    
+                              <a [routerLink]="'/EventDetails/'+item.id" ><img [src]="userService.baseURL +'/'+ item.image" alt="img"></a>  
+                            
+                            </figure>
+
+                            <div  style="text-align: center; position:relative; width: 100%;">
+                                <img [src]="userService.baseURL +'/'+ item.imageFormateur" alt="img" style="border-radius: 50%; width:100px; position:absolute; left:0; right: 0px; top:-50px; z-index: 100; margin:auto; height: 100px;">
+                            </div>
+
+                            <div class="aa-blog-info">
+            
+                              <br>
+                              <br>
+
+                              <div style="width: 100%; display: flex; flex-direction: row; flex-wrap: nowrap;">
+                             
+                                  <div style="width: 60%; padding:5px; height: 200px; overflow: hidden;">
+
+                                    <h3 class="aa-blog-title"><a [routerLink]="'/EventDetails/'+item.id" style="color: black; font-size: 30px;">{{item.titre1}}</a></h3>
+                                  
+                                    <p style="color: black; font-size: 17px;"> {{item.specialites}} </p> 
+                                    
+                                  </div>
+
+                                  <div style="width: 40%; padding:5px; margin-top: 10px;">
+
+                                    <div class="style-agenda" style="background-color: #425465; padding:5px; text-align: center;">
+                                      <a href="#"><i  style="font-size: 20px;" class="fa fa-clock-o"></i> {{item.timeDepart}} - {{item.timeEnd}}</a> <br> <br>
+                                
+                                      <span href="#"><i class="fa fa-calendar "></i> {{item.date}}</span>
+                                    </div>
+                                    
+                                  </div>
+                             
+                              </div>
+                              <div style="width: 100%; padding:10px;">
+                                <a [routerLink]="'/EventDetails/'+item.id" class="aa-read-mor-btn" style="float: left; background-color: #425465; padding:5px 20px; color:white;">250 $</a>
+                        
+                                <a [routerLink]="'/EventDetails/'+item.id" class="aa-read-mor-btn" style="float: right; background-color: #425465; padding:5px 20px; color:white;">Joind</a>
+                              </div>
+                              
+                              
+
+                              <br>
+                              <br>
+
+                              
+                            </div>
+                          </div>
+                        </div>
+            
+                        </div>
+            
+                      
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              
+             
+
+
+         
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+             
+    
+   
+  <!-- footer -->  
+  <app-footer-formation></app-footer-formation>
+  <!-- / footer -->
+
+  

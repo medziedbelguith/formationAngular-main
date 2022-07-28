@@ -1,0 +1,64 @@
+[
+
+    {
+        "id":1,
+        "titre":"إدارة الاعمال",
+        "image":"./assets/img/categories/téléchargement.png",
+        "route":"/IdaretAmel"
+    },
+    {
+        "id":2,
+        "titre":"تنمية ذاتية",
+        "image":"./assets/img/categories/téléchargement.jfif",
+        "route":"/CategorieDetails"
+    },
+    {
+        "id":3,
+        "titre":"الطفل و العلاقات الاسرية و التربوية",
+        "image":"./assets/img/categories/téléchargement (1).jfif",
+        "route":"/CategorieDetails"
+    },
+    {
+        "id":4,
+        "titre":"علوم النفس",
+        "image":"./assets/img/categories/téléchargement (2).jfif",
+        "route":"/CategorieDetails"
+    },
+    {
+        "id":5,
+        "titre":"علوم الطاقة",
+        "image":"./assets/img/categories/téléchargement (3).jfif",
+        "route":"/CategorieDetails"
+    },
+    {
+        "id":6,
+        "titre":" فن الاتصال و التواصل",
+        "image":"./assets/img/categories/téléchargement (4).jfif",
+        "route":"/CategorieDetails"
+    },
+    {
+        "id":7,
+        "titre":"اذاعة و اعلام",
+        "image":"./assets/img/categories/téléchargement (5).jfif",
+        "route":"/CategorieDetails"
+    },
+    {
+        "id":8,
+        "titre":"Informatique multimédia",
+        "image":"./assets/img/categories/téléchargement (6).jfif",
+        "route":"/CategorieDetails"
+    },
+    {
+        "id":8,
+        "titre":"Informatique multimédia",
+        "image":"./assets/img/categories/téléchargement (6).jfif",
+        "route":"/CategorieDetails"
+    },
+    {
+        "id":8,
+        "titre":"Informatique multimédia",
+        "image":"./assets/img/categories/téléchargement (6).jfif",
+        "route":"/CategorieDetails"
+    }
+
+]

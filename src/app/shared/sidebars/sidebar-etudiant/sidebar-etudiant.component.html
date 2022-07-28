@@ -1,0 +1,24 @@
+
+<aside class="aa-sidebar" *ngIf="role == userService.roleEtudiant">
+
+    <!-- single sidebar -->
+    <div class="aa-sidebar-widget">
+      <br><br>
+      <h3>Etudiant</h3>
+      <ul class="aa-catg-nav">
+        <li><a [routerLink]="['/ListFormationEtudiant/'+userService.id]">Mes formations</a></li>
+        <li><a [routerLink]="['/ListInscriptionEtudiant/'+userService.id]">Mes inscriptions</a></li>
+        <li><a >Notifications</a></li>
+        <li><a [routerLink]="['/ProfilEtudiant']">Mon profil</a></li>
+      </ul>
+
+    </div>
+
+</aside>
+ 
+
+ 
+<app-sidebar-admin *ngIf="role == userService.roleAdmin"> </app-sidebar-admin>
+
+
+<app-sidebar-enseignant *ngIf="role == userService.roleFormateur"> </app-sidebar-enseignant>

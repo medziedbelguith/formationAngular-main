@@ -1,0 +1,41 @@
+[
+
+    {
+        "id":2,
+        "nom":"Coach houssen",
+        "image":"./assets/img/formateurs/images (1).jfif",
+        "route":"['/CategorieDetails']"
+    },
+    {
+        "id":2,
+        "nom":"Coach houssen",
+        "image":"./assets/img/formateurs/images (1).jfif",
+        "route":"['/CategorieDetails']"
+    },
+    {
+        "id":2,
+        "nom":"Coach houssen",
+        "image":"./assets/img/formateurs/images.jfif",
+        "route":"['/CategorieDetails']"
+    },
+
+    {
+        "id":2,
+        "nom":"Coach houssen",
+        "image":"./assets/img/formateurs/images (1).jfif",
+        "route":"['/CategorieDetails']"
+    },
+    {
+        "id":2,
+        "nom":"Coach houssen",
+        "image":"./assets/img/formateurs/images (1).jfif",
+        "route":"['/CategorieDetails']"
+    },
+    {
+        "id":2,
+        "nom":"Coach houssen",
+        "image":"./assets/img/formateurs/images.jfif",
+        "route":"['/CategorieDetails']"
+    }
+
+]

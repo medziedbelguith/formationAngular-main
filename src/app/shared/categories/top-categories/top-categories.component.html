@@ -1,0 +1,33 @@
+<section id="aa-promo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div style="text-align: center; padding-top: 20px;">
+              <h2>Top category </h2>
+          </div>
+          <div class="aa-promo-area">
+            <div class="row">
+              <!-- promo left -->
+
+              
+              <div class="col-md-6" *ngFor="let item of categories">                
+                <div class="aa-promo-left">
+                  <div class="aa-promo-banner" style="width: auto; height: auto;">                    
+                    <img [src]="item.image" alt="img">                    
+                    <div class="aa-prom-content">
+                      <span>75% Off</span>
+                      <h4><a class="btn btn-primary class-button" [routerLink]="'/CategorieDetails/'+item.titre">{{item.titre}}</a></h4>                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </section>
+

@@ -1,0 +1,266 @@
+
+
+
+
+  <!-- catg header banner section -->
+  <section id="aa-catg-head-banner">
+    <img src="./assets/img/fashion/fashion-header-bg-8.jpg" alt="fashion img">
+    <div class="aa-catg-head-banner-area">
+      <div class="container">
+       <div class="aa-catg-head-banner-content">
+         <h2>Formation</h2>
+         <ol class="breadcrumb">
+           <li><a href="index.html">Home</a></li>         
+           <li class="active">Formation</li>
+         </ol>
+       </div>
+      </div>
+    </div>
+   </section>
+   <!-- / catg header banner section -->
+ 
+
+   <app-loading *ngIf="isLoading"></app-loading>
+
+   <!-- Blog Archive -->
+   <section id="aa-blog-archive" *ngIf="formation">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12">
+           <div class="aa-blog-archive-area">
+             <div class="row">
+               <div class="col-md-12">
+                 <!-- Blog details -->
+                 <div class="aa-blog-content aa-blog-details">
+                      <div class="aa-article-bottom">
+                       
+                     </div>
+
+                     <div class="container">
+
+                      <div class="row">
+                        <div class="col-md-12">
+                          
+                          <div class="aa-blog-archive-area">
+                           
+                           
+                           
+                            <div class="row" >
+                              <div class="col-md-12">
+                                <!-- Blog details -->
+                                <div>
+                                            
+                                  <div class="row" style=" padding: 10px; border-radius: 15px;">
+
+                                    <div class="col-md-12">
+               
+                                      <figure class="aa-blog-img" style="text-align: center;">
+                                        <a href="#"><img [src]="userService.baseURL +'/'+ formation.imagePrincipale" alt="fashion img" style="max-width: 100%; height: 300px; margin:auto; border-radius: 15px;"></a>
+                                      </figure>
+                                            
+                                    </div>
+
+                                    
+                                   </div>
+ 
+                                   
+                                  
+               
+
+
+
+                                     <div class="aa-article-bottom">
+                                   
+                                    </div>
+           
+                                    
+                                    <div class="container">
+                                       <div class="col-md-12">
+               
+                                           <div class="row">
+
+                                               <h1 style="color: black; font-weight: 900;">{{formation.nom}}</h1>
+                                         
+                                                <div class="evaluation">
+
+                                                
+                                                  <i  *ngIf="sommeEvaluation == 0" class="fa fa-star-o" aria-hidden="true"></i> 
+                                                  <i  *ngIf="sommeEvaluation > 0" class="fa fa-star" aria-hidden="true"></i> 
+                                                  
+                                                  <i  *ngIf="!(sommeEvaluation > 1)" class="fa fa-star-o" aria-hidden="true"></i> 
+                                                  <i  *ngIf="sommeEvaluation > 1" class="fa fa-star" aria-hidden="true"></i> 
+                                                    
+                                                  <i  *ngIf="!(sommeEvaluation > 2)" class="fa fa-star-o" aria-hidden="true"></i> 
+                                                  <i  *ngIf="sommeEvaluation > 2" class="fa fa-star" aria-hidden="true"></i> 
+                                                    
+                                                  <i  *ngIf="!(sommeEvaluation > 3)" class="fa fa-star-o" aria-hidden="true"></i> 
+                                                  <i  *ngIf="sommeEvaluation > 3" class="fa fa-star" aria-hidden="true"></i> 
+                                                    
+                                                  <i  *ngIf="!(sommeEvaluation > 4)" class="fa fa-star-o" aria-hidden="true"></i> 
+                                                  <i  *ngIf="sommeEvaluation > 4" class="fa fa-star" aria-hidden="true"></i> 
+                                                    
+                                                </div>
+                                              
+                                               <br>
+
+                                               <ul class="style-list">
+                                               
+                                                   <li style="display: inline;" (click)="changeDetails(1)" > <span class="button-style"  *ngIf="idDetails == 1">Descriptions</span> <span  *ngIf="idDetails != 1">Descriptions</span> </li>
+                                                   <li style="display: inline;" (click)="changeDetails(2)" ><span class="button-style"  *ngIf="idDetails == 2">Chapitres</span> <span  *ngIf="idDetails != 2">Chapitres</span>  </li>
+                                                   <li style="display: inline;" (click)="changeDetails(3)" ><span class="button-style"  *ngIf="idDetails == 3">Formateur</span> <span  *ngIf="idDetails != 3">Formateur</span>  </li>
+                                                   <li style="display: inline;" (click)="changeDetails(4)" ><span class="button-style"  *ngIf="idDetails == 4"> Evaluation</span> <span  *ngIf="idDetails != 4"> Evaluation</span> </li>
+                                               
+                                               </ul>
+                                           </div>
+               
+                                           <div class="row style-block" *ngIf="idDetails == 1" >
+               
+                                            <ul>
+                                              <li *ngFor="let ligne of formation.descriptionsDessus"> {{ligne.ligne}} </li>
+                                            </ul>
+                        
+                                            <br>
+                                            <button *ngIf="!autorized"  (click)="openCommande(formation.id)" class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> Inscrire </button>
+                                          
+                                           </div>
+               
+                                           <div class="row style-block" *ngIf="idDetails == 2">
+               
+                                            <div *ngFor="let item of formation.descriptionsDessous">
+                                              <h3> {{item.title}} </h3>
+                                           
+                                              <p> {{item.value}} </p>
+                                           
+                                            </div>
+                                            
+                                            <br>
+                                            <button *ngIf="!autorized"  (click)="openCommande(formation.id)" class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> Inscrire </button>
+                                          
+                                             </div>
+               
+                                             <div class="row style-block" *ngIf="idDetails == 3">
+               
+                                               <h2 style="text-align: center;">
+                                                   {{formation.titre2}}      
+                                               </h2>
+               
+                                               <p> <span style="font-weight: 900;">Nom de Formateur : </span> {{formateur.nom}}</p>
+               
+                                             
+                                               <p>  <span style="font-weight: 900;">Specialites :</span> {{formateur.specialites}}</p>
+               
+                                
+                                               <br>
+                                               <button *ngIf="!autorized"  (click)="openCommande(formation.id)" class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> Inscrire </button>
+                                             
+                                             </div>
+               
+                                             <div class="row style-block" *ngIf="idDetails == 4">
+                                              <h2 style="text-align: center;">
+                                                 Evaluation  
+                                             </h2>
+
+                                             <p>Svp, donnez votre Evaluation pour cette formation !!</p>
+
+                                             <div class="evaluation">
+
+                                                <i (click)="changeEvaluation(1)" *ngIf="evaluation == 0" class="fa fa-star-o" aria-hidden="true"></i> 
+                                                <i (click)="changeEvaluation(1)" *ngIf="evaluation > 0" class="fa fa-star" aria-hidden="true"></i> 
+                                                
+                                                <i (click)="changeEvaluation(2)" *ngIf="!(evaluation > 1)" class="fa fa-star-o" aria-hidden="true"></i> 
+                                                <i (click)="changeEvaluation(2)" *ngIf="evaluation > 1" class="fa fa-star" aria-hidden="true"></i> 
+                                                  
+                                                <i (click)="changeEvaluation(3)" *ngIf="!(evaluation > 2)" class="fa fa-star-o" aria-hidden="true"></i> 
+                                                <i (click)="changeEvaluation(3)" *ngIf="evaluation > 2" class="fa fa-star" aria-hidden="true"></i> 
+                                                  
+                                                <i (click)="changeEvaluation(4)" *ngIf="!(evaluation > 3)" class="fa fa-star-o" aria-hidden="true"></i> 
+                                                <i (click)="changeEvaluation(4)" *ngIf="evaluation > 3" class="fa fa-star" aria-hidden="true"></i> 
+                                                  
+                                                <i (click)="changeEvaluation(5)" *ngIf="!(evaluation > 4)" class="fa fa-star-o" aria-hidden="true"></i> 
+                                                <i (click)="changeEvaluation(5)" *ngIf="evaluation > 4" class="fa fa-star" aria-hidden="true"></i> 
+                                                  
+                                             </div>
+                                            
+                                            <br>
+                                            <button *ngIf="!autorized"  (click)="openCommande(formation.id)" class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto;"> Inscrire </button>
+                                           
+                                                  
+                                          </div>
+               
+               
+                                       </div>
+               
+                                    </div>
+               
+                                 
+                                </div>
+                              </div>
+                
+                             
+                            </div> 
+
+                      
+
+
+                      
+                   <!-- blog navigation -->
+                   <div class="aa-blog-navigation"  *ngIf="autorized" >
+                    <button class="aa-blog-prev" (click)="setNextChapitre(-1)"><span class="fa fa-arrow-left"></span>Chapitre présedent</button>
+                    <button class="aa-blog-next" href="" (click)="setNextChapitre(1)">Chapitre suivant<span class="fa fa-arrow-right"></span></button>
+                  </div>
+                   <!-- Blog Comment threats -->
+                   <div class="aa-blog-comment-threat" *ngIf="autorized">
+                     <h3>Chapitres ({{formation.chapitres.length}})</h3>
+                     <div class="comments">
+                       <ul class="commentlist">
+                      
+                        <li >
+                              <h4 class="author-name">{{chapitre.titre}}</h4>
+                             
+                              <p> {{chapitre.description}} </p>
+                                 
+                                <br>
+                            
+                                <video controls style="width: 100%;" *ngIf="isShowVideo">
+                                  <source [src]="userService.baseURL +'/'+ chapitre.video" type="video/mp4">
+                                </video>
+                      
+                                <br>
+                              <br>
+                              <button class="btn btn-success"> Telecharger PDF de cours et de questions</button>
+                              
+                              <br>
+                              <br>
+                              <p> SVP insérez votre réponse ici sous forme de fichier PDF et pour valider le chapitre après la conformation d'enseignant!! </p>
+                              <input type="file">
+                              
+                              <a href="#" class="reply-btn">Entrer</a>
+                         </li>
+                      
+             
+                       </ul>
+                     </div>
+                   
+                   </div>
+                   <!-- blog comments form -->
+                   
+                 </div>
+               </div>
+ 
+              
+             </div> 
+             </div>  
+             
+             
+           </div>
+         </div>
+       </div>
+     </div>
+     </div></div></div>
+   </section>
+
+   
+   <app-inscription-formation-modal [isOpenCommande]="isOpenCommande" [idCommande]="idCommande" (closeCommandeEvent)="closeCommande()" ></app-inscription-formation-modal> 
+  
+   <app-footer-formation></app-footer-formation>
+

@@ -1,0 +1,235 @@
+
+ 
+
+
+ <section id="aa-catg-head-banner">
+  <img src="./assets/img/fashion/fashion-header-bg-8.jpg" alt="fashion img">
+  <div class="aa-catg-head-banner-area">
+   <div class="container">
+    <div class="aa-catg-head-banner-content">
+      <h2>Nouveau formation</h2>
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>                   
+        <li class="active">Nouveau formation</li>
+      </ol>
+    </div>
+   </div>
+ </div>
+</section>
+<!-- / catg header banner section -->
+
+<section id="aa-product-category">
+ <div class="container">
+   <div class="row">
+     <div class="col-lg-9 col-md-9 col-sm-8 col-md-push-3">
+       <div class="aa-product-catg-content" style="padding-bottom:40px ;">
+         
+         <div class="col-md-12">
+          
+             <h1>Nouveau centre de formation</h1>
+             <form class="form-horizontal" [formGroup]="formC">
+                 
+                  <fieldset id="account">
+                      <legend>Informations Formateur</legend>
+                     
+                      
+                      <div class="form-group required">
+                          <label for="input-firstname" class="col-sm-2 control-label">Nom formateur</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" formControlName="nomFormateur" placeholder="" value="" name="firstname">
+                          </div>
+                      </div>
+
+                      <div class="form-group required">
+                          <label for="input-firstname" class="col-sm-2 control-label">Adresse</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" formControlName="adresse" placeholder="" value="" name="firstname">
+                          </div>
+                      </div>
+
+                      <div class="form-group required">
+                          <label for="input-firstname" class="col-sm-2 control-label">Telephone</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" formControlName="telephone" placeholder="" value="" name="firstname">
+                          </div>
+                      </div>
+
+
+                      <div class="form-group required">
+                          <label for="input-firstname" class="col-sm-2 control-label">Email</label>
+                          <div class="col-sm-10">
+                              <input type="email" class="form-control" formControlName="email" placeholder="" value="" name="firstname">
+                          </div>
+                      </div>
+                      
+                
+
+                      <div class="form-group required">
+                          <label for="input-lastname" class="col-sm-2 control-label">Specialites</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" formControlName="specialites" placeholder="" value="" name="lastname">
+                          </div>
+                      </div>
+                      
+                      <div class="form-group required">
+                          <label for="input-lastname" class="col-sm-2 control-label">Temps depart</label>
+                          <div class="col-sm-10">
+                              <input type="time" class="form-control" formControlName="timeDepart" placeholder="" value="" name="lastname">
+                          </div>
+                      </div>
+
+                      <div class="form-group required">
+                          <label for="input-lastname" class="col-sm-2 control-label">Temps fin</label>
+                          <div class="col-sm-10">
+                              <input type="time" class="form-control" formControlName="timeEnd" placeholder="" value="" name="lastname">
+                          </div>
+                      </div>
+
+                      <div class="form-group required">
+                          <label for="input-lastname" class="col-sm-2 control-label">Date</label>
+                          <div class="col-sm-10">
+                              <input type="date" class="form-control" formControlName="date" placeholder="" value="" name="lastname">
+                          </div>
+                      </div>
+
+                      <div class="form-group required">
+                          <label for="input-lastname" class="col-sm-2 control-label">Titre 1</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" formControlName="titre1" placeholder="" value="" name="lastname">
+                          </div>
+                      </div>
+
+                      <div class="form-group required">
+                          <label for="input-lastname" class="col-sm-2 control-label">Titre 2</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" formControlName="titre2" placeholder="" value="" name="lastname">
+                          </div>
+                      </div>
+                      
+
+                      
+                  </fieldset>
+                 
+
+
+                  <fieldset id="address">
+                      <legend>Déscriptions</legend>
+                      
+                      <div class="class-slected">
+                          <div class="form-group">
+                              <label for="input-company" class="col-sm-2 control-label">Paragraphe</label>
+                              <div class="col-sm-10">
+                                  <textarea class="form-control" formControlName="ligne" rows="10" name="enquiry"></textarea>
+                              </div>
+                          </div>
+      
+                          
+                          <button type="button" class="btn btn-danger" (click)="ajouteDescriptionDessus()" *ngIf="descriptionDessusSelected.id == -1"> Ajouter Paragraphe</button>
+                          <button type="button" class="btn btn-danger" (click)="modifieDescriptionDessus()" *ngIf="descriptionDessusSelected.id != -1"> Modifier Paragraphe</button>
+                      </div>
+  
+                      <table class="table table-bordered">
+                          
+                          <tbody>
+                              <tr *ngFor='let item of listDescriptionsDessus'>
+                                  <td class="text-center">{{item.ligne}}</td>
+                                  <td class="text-center">
+                                      <button class="btn btn-danger"  title="" data-toggle="tooltip" type="button" data-original-title="Modifier quantite" (click)="selectedDescriptionDessus(item.id)"><i class="fa fa-refresh" style="color: white;"></i></button>
+                                      <button class="btn btn-danger" title="" data-toggle="tooltip" type="button" data-original-title="Supprimer" (click)="removeDescriptionDessus(item.id)"><i class="fa fa-times-circle" style="color: white;"></i></button>
+                                  </td>
+                              
+                              </tr>
+                          </tbody>
+  
+                      </table>
+  
+                  </fieldset>
+
+  
+                  <fieldset style="margin-top: 30px;">
+                      <legend>Images</legend>
+                      
+                          <div class="class-slected">
+                              <div class="form-group">
+                                  <label for="input-company" class="col-sm-2 control-label">image formateur</label>
+                                  <div class="col-sm-5">
+                                      <input 
+                                      formControlName="file2"
+                                      id="file" 
+                                      type="file" 
+                                      class="form-control"
+                                      multiple="" 
+                                      (change)="selectedM2($event)">
+       
+                                  </div>
+  
+                                  <div class="col-sm-5">
+                                      <img *ngIf="imageSelectedSource2" [src]="imageSelected2" style="max-width:100%; margin-bottom: 20px;">
+                                      <img *ngIf="!imageSelectedSource2" [src]="userService.baseURL+'/'+imageSelected2" style="max-width:100%; margin-bottom: 20px;">
+                                  </div>
+                              </div>
+                           
+                            
+                          </div>
+                    
+
+
+                          <div class="class-slected">
+                              <div class="form-group">
+                                  <label for="input-company" class="col-sm-2 control-label">image event</label>
+                                  <div class="col-sm-5">
+                                      <input 
+                                      formControlName="file"
+                                      id="file" 
+                                      type="file" 
+                                      class="form-control"
+                                      multiple="" 
+                                      (change)="selectedM($event)">
+       
+                                  </div>
+  
+                                  <div class="col-sm-5">
+                                    <img *ngIf="imageSelectedSource" [src]="imageSelected" style="max-width:100%; margin-bottom: 20px;">
+                                    <img *ngIf="!imageSelectedSource" [src]="userService.baseURL+'/'+imageSelected" style="max-width:100%; margin-bottom: 20px;">
+                                  </div>
+                              </div>
+                           
+                            
+                          </div>
+                        
+                         
+                      
+                  </fieldset>
+                 
+                  <div class="form-group" style="border:red solid 2px;" *ngIf="isErreurs">
+                      <p style="color: red; padding: 2px 5px;">
+                        <span *ngFor="let e of erreurString">  {{e}} <br> </span> 
+                      </p>
+                  </div>
+    
+                  <app-loading *ngIf="isLoading"></app-loading>
+  
+                  <div class="buttons">
+                      <div class="pull-right">
+                          <input type="submit" class="btn btn-primary" value="Ajouter" (click)="updateProduit()">
+                      </div>
+                  </div>
+              </form>
+   
+  
+          </div>
+
+       </div>
+     </div>
+     
+     <div class="col-lg-3 col-md-3 col-sm-4 col-md-pull-9">
+
+         <app-sidebar-admin> </app-sidebar-admin>
+
+     </div>
+    
+   </div>
+ </div>
+</section>
+
+<app-footer-formation></app-footer-formation>

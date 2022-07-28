@@ -1,0 +1,36 @@
+<div id="myModalCommande" [class]="classCss">
+
+    <!-- Modal content -->
+    <div class="modal-contentCommande" >
+      <span class="closeCommande" (click)="closeCommande()">&times;</span>
+      <p style="font-weight: 800; font-size: 18px;">Validation</p>
+      <hr style="width: 100%;">
+  
+      <p *ngIf="etat == 0 && isEvent == '0'" >
+         Please validate your registration in this training !!
+      </p>
+
+      <p *ngIf="etat == 0 && isEvent == '1'" >
+      Please validate your registration in this event !!
+      </p>
+
+      <p *ngIf="etat == 1" >
+         Your registration is recorded and we will contact you as soon as possible.
+      </p>
+  
+                
+      <button *ngIf="etat == 0" (click)="envoyerInscription()" class="btn btn-info" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto; "> Valider </button>
+      <button *ngIf="etat == 0"  (click)="closeCommande()" class="btn btn-danger" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto; margin-right: 5px;"> Annuler </button>
+
+      <button *ngIf="etat == 1"  (click)="closeCommande()" class="btn btn-danger" style="float: right; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: 700; margin-top: auto; margin-right: 5px;"> D'accord </button>
+
+      <app-loading *ngIf="isLoading"></app-loading>
+                                              
+     <br> <br> 
+    </div>
+  
+  </div>
+  
+  
+  
+

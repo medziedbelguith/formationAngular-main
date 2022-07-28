@@ -1,0 +1,410 @@
+
+
+ 
+
+
+ <section id="aa-catg-head-banner">
+     <img src="./assets/img/fashion/fashion-header-bg-8.jpg" alt="fashion img">
+     <div class="aa-catg-head-banner-area">
+      <div class="container">
+       <div class="aa-catg-head-banner-content">
+         <h2>Modifier formation</h2>
+         <ol class="breadcrumb">
+           <li><a href="index.html">Home</a></li>                   
+           <li class="active">Modifier formation</li>
+         </ol>
+       </div>
+      </div>
+    </div>
+   </section>
+   <!-- / catg header banner section -->
+ 
+  <!-- Cart view section -->
+  <section id="aa-product-category">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-8 col-md-push-3">
+          <div class="aa-product-catg-content" style="padding-bottom:40px ;">
+            
+            <div class="col-md-12">
+             
+                <h1>About Me</h1>
+                <form class="form-horizontal" [formGroup]="formC">
+                    
+                    <fieldset id="account" style="margin-top: 20px;">
+                        <legend>Your personal information</legend>
+                      
+                        <div class="form-group non-required">
+                            <label for="input-firstname" class="col-sm-2 control-label">First name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="input-firstname" formControlName="nom" placeholder="First name" value="" name="firstname">
+                            </div>
+                        </div>
+                        <div class="form-group non-required">
+                            <label for="input-lastname" class="col-sm-2 control-label">Last name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="input-lastname" formControlName="prenom" placeholder="Last name" value="" name="lastname">
+                            </div>
+                        </div>
+                       
+                        <div class="form-group required">
+                            <label for="input-telephone" class="col-sm-2 control-label">phone</label>
+                            <div class="col-sm-10">
+                                <input type="tel" class="form-control" id="input-telephone" formControlName="telephone" placeholder="phone" value="" name="telephone">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label for="input-telephone" class="col-sm-2 control-label">Specialties</label>
+                            <div class="col-sm-10">
+                                <input type="tel" class="form-control" id="input-telephone" formControlName="specialites" placeholder="Specialties" value="" name="telephone">
+                            </div>
+                        </div>
+                       
+                    </fieldset>
+                    
+                    <fieldset id="address" style="margin-top: 20px;">
+    
+                        <legend>Your address</legend>
+                        <div class="form-group non-required">
+                            <label for="input-company" class="col-sm-2 control-label">foundation</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="input-company" formControlName="company" placeholder="foundation" value="" name="company">
+                            </div>
+                        </div>
+                        <div class="form-group non-required">
+                            <label for="input-address-1" class="col-sm-2 control-label">Address</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="input-address-1" formControlName="adresse" placeholder="Address" value="" name="address_1">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group non-required">
+                            <label for="input-city" class="col-sm-2 control-label">Ville</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="input-city" formControlName="ville" placeholder="Ville" value="" name="city">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group non-required">
+                            <label for="input-city" class="col-sm-2 control-label">country</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="input-city" formControlName="pays" placeholder="country" value="" name="city">
+                            </div>
+                        </div>
+    
+                        <div class="form-group non-required">
+                            <label for="input-postcode" class="col-sm-2 control-label">Postal code</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="input-postcode" formControlName="codePostal" placeholder="Postal code" value="" name="postcode">
+                            </div>
+                        </div>
+                  
+                    </fieldset>
+                    
+                    <fieldset style="margin-top: 20px;">
+                        <legend>Your new email and password</legend>
+                        
+                        <div class="form-group required">
+                            <label for="input-email" class="col-sm-2 control-label"> New Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="input-email" formControlName="newEmail" placeholder="New Email" value="" name="email">
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="input-password" class="col-sm-2 control-label">New Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" formControlName="newPassword" value="" name="password">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group required">
+                            <label for="input-confirm" class="col-sm-2 control-label">Confirm password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control"  formControlName="confirmePassword" value="" name="confirm">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset style="margin-top: 20px;">
+                        <legend>Your old email and password (mandatory)</legend>
+                        <div class="form-group required">
+                            <label for="input-password" class="col-sm-2 control-label">E-mail</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" formControlName="email" value="" name="password">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label for="input-confirm" class="col-sm-2 control-label">the password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control"  formControlName="password" value="" name="confirm">
+                            </div>
+                        </div>
+                    </fieldset>
+                   
+                  
+
+                     <fieldset id="address">
+                        <legend>About me </legend>
+                        
+                        <div class="class-slected">
+                            <div class="form-group">
+                                <label for="input-company" class="col-sm-2 control-label">title</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" formControlName="titleExperience" placeholder="Ex: Couleur" value="" name="email">
+                                </div>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="input-company" class="col-sm-2 control-label">value</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" formControlName="valueExperience" rows="10" name="enquiry"></textarea>
+                                </div>
+                            </div>
+        
+                              
+                            <button type="button" class="btn btn-danger" (click)="ajouteExperience()" *ngIf="ExperienceSelected.id == -1"> Add </button>
+                            <button type="button" class="btn btn-danger" (click)="modifieExperience()" *ngIf="ExperienceSelected.id != -1"> Edit </button>
+                        </div>
+    
+                        <table class="table table-bordered">
+                            
+                            <tbody>
+                                <tr *ngFor='let item of listExperiences'>
+                                    <th class="text-center">{{item.title}}</th>
+                                    <td class="text-center">{{item.value}}</td>
+                                    <td class="text-center">
+                          
+                                        <button class="btn btn-danger"  title="" data-toggle="tooltip" type="button" data-original-title="Modifier quantite" (click)="selectedExperience(item.id)"><i class="fa fa-refresh" style="color: white;"></i></button>
+                                        <button class="btn btn-danger" title="" data-toggle="tooltip" type="button" data-original-title="Supprimer" (click)="removeExperience(item.id)"><i class="fa fa-times-circle" style="color: white;"></i></button>
+                          
+                                    </td>
+                                </tr>
+                            </tbody>
+    
+                        </table>
+    
+                    </fieldset>
+     
+
+                    <fieldset id="address">
+                        <legend>Experience</legend>
+                        
+                        <div class="class-slected">
+                            <div class="form-group">
+                                <label for="input-company" class="col-sm-2 control-label">Titre</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" formControlName="titleStage" placeholder="Ex: Couleur" value="" name="email">
+                                </div>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="input-company" class="col-sm-2 control-label">Valeur</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" formControlName="valueStage" rows="10" name="enquiry"></textarea>
+                                </div>
+                            </div>
+        
+                              
+                            <button type="button" class="btn btn-danger" (click)="ajouteStage()" *ngIf="StageSelected.id == -1"> Add Experience</button>
+                            <button type="button" class="btn btn-danger" (click)="modifieStage()" *ngIf="StageSelected.id != -1"> Edit Experience</button>
+                        </div>
+    
+                        <table class="table table-bordered">
+                            
+                            <tbody>
+                                <tr *ngFor='let item of listStages'>
+                                    <th class="text-center">{{item.title}}</th>
+                                    <td class="text-center">{{item.value}}</td>
+                                    <td class="text-center">
+                          
+                                        <button class="btn btn-danger"  title="" data-toggle="tooltip" type="button" data-original-title="Modifier quantite" (click)="selectedStage(item.id)"><i class="fa fa-refresh" style="color: white;"></i></button>
+                                        <button class="btn btn-danger" title="" data-toggle="tooltip" type="button" data-original-title="Supprimer" (click)="removeStage(item.id)"><i class="fa fa-times-circle" style="color: white;"></i></button>
+                          
+                                    </td>
+                                </tr>
+                            </tbody>
+    
+                        </table>
+    
+                    </fieldset>
+     
+                    <fieldset id="address">
+                        <legend>Training</legend>
+                        
+                        <div class="class-slected">
+                            <div class="form-group">
+                                <label for="input-company" class="col-sm-2 control-label">Titre</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" formControlName="titleFormation" placeholder="Ex: Couleur" value="" name="email">
+                                </div>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="input-company" class="col-sm-2 control-label">Valeur</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" formControlName="valueFormation" rows="10" name="enquiry"></textarea>
+                                </div>
+                            </div>
+        
+                              
+                            <button type="button" class="btn btn-danger" (click)="ajouteFormation()" *ngIf="FormationSelected.id == -1"> Add Row</button>
+                            <button type="button" class="btn btn-danger" (click)="modifieFormation()" *ngIf="FormationSelected.id != -1"> Modify Row</button>
+                        </div>
+    
+                        <table class="table table-bordered">
+                            
+                            <tbody>
+                                <tr *ngFor='let item of listFormations'>
+                                    <th class="text-center">{{item.title}}</th>
+                                    <td class="text-center">{{item.value}}</td>
+                                    <td class="text-center">
+                          
+                                        <button class="btn btn-danger"  title="" data-toggle="tooltip" type="button" data-original-title="Modifier quantite" (click)="selectedFormation(item.id)"><i class="fa fa-refresh" style="color: white;"></i></button>
+                                        <button class="btn btn-danger" title="" data-toggle="tooltip" type="button" data-original-title="Supprimer" (click)="removeFormation(item.id)"><i class="fa fa-times-circle" style="color: white;"></i></button>
+                          
+                                    </td>
+                                </tr>
+                            </tbody>
+    
+                        </table>
+    
+                    </fieldset>
+     
+                     
+                     
+                     <fieldset>
+                         <legend>Categories</legend>
+     
+                         <div class="form-group" style="margin-left: 10px;">
+                             
+                             <div class="col-sm-5">
+                                 <div *ngFor="let categorie of categories" >
+                             
+                                     <label class="checkbox" *ngIf="verifierCategories2(categorie.id)"><input (change)="selectCategories2(categorie.id)" name="filter[]" type="checkbox" checked/>{{categorie.id}}</label>
+                                     <label class="checkbox" *ngIf="!verifierCategories2(categorie.id)"><input (change)="selectCategories2(categorie.id)" name="filter[]" type="checkbox"/>{{categorie.id}}</label>
+                                    
+                                     <div style="border-left:1px solid grey; margin-left: 7px;">
+                                        
+                                         <div *ngFor="let sousCategorie of categorie.categories" style="margin-left: 20px;">
+                                             
+                                             <label class="checkbox" *ngIf="verifierCategories2(sousCategorie.id)"><input (click)="selectCategories2(sousCategorie.id)" name="filter[]" type="checkbox" checked/>{{sousCategorie.id}}</label>
+                                             <label class="checkbox" *ngIf="!verifierCategories2(sousCategorie.id)"><input (click)="selectCategories2(sousCategorie.id)" name="filter[]" type="checkbox"/>{{sousCategorie.id}}</label>
+                                        
+                                             <div style="border-left:1px solid grey;  margin-left: 7px;">
+                                                 <div *ngFor="let sousSousCategorie of sousCategorie.categories" style="margin-left: 20px;" class="div-sous-sous-categories" [id]="sousCategorie.id" >
+                                                     
+                                                     <label class="checkbox" *ngIf="verifierCategories2(sousSousCategorie.id)"><input (click)="selectCategories2(sousSousCategorie.id)" name="filter[]" type="checkbox" checked/>{{sousSousCategorie.id}}</label>
+                                                     <label class="checkbox" *ngIf="!verifierCategories2(sousSousCategorie.id)"><input (click)="selectCategories2(sousSousCategorie.id)" name="filter[]" type="checkbox"/>{{sousSousCategorie.id}}</label>
+                                                
+                                                 </div>
+                                             </div>
+     
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+     
+                         </div>
+     
+     
+                         <br> <br>
+                         <label style="margin-left: 20px;" class="checkbox" *ngIf="verifierCategories2(productService.produitSpecialsString)"><input (click)="selectCategories2(productService.produitSpecialsString)" name="filter[]" type="checkbox" value="0" title="Specials" checked />Specials-Produit</label>
+                         <label style="margin-left: 20px;" class="checkbox" *ngIf="!verifierCategories2(productService.produitSpecialsString)"><input (click)="selectCategories2(productService.produitSpecialsString)" name="filter[]" type="checkbox" value="1" title="Specials" />Specials-Produit</label>
+     
+                         <label style="margin-left: 20px;" class="checkbox" *ngIf="verifierCategories2(productService.produitNouveauString)"><input (click)="selectCategories2(productService.produitNouveauString)" name="filter[]" type="checkbox" value="0" title="Nouveau"  checked />Nouveau-Produit</label>
+                         <label style="margin-left: 20px;" class="checkbox" *ngIf="!verifierCategories2(productService.produitNouveauString)"><input (click)="selectCategories2(productService.produitNouveauString)" name="filter[]" type="checkbox" value="1" title="Nouveau" />Nouveau-Produit</label>
+                     
+                         <label style="margin-left: 20px;" class="checkbox" *ngIf="verifierCategories2(productService.produitMeilleurVenteString)"><input (click)="selectCategories2(productService.produitMeilleurVenteString)" name="filter[]" type="checkbox" value="0" title="Meilleur-Vente"  checked />Meilleur-Vente-Produit</label>
+                         <label style="margin-left: 20px;" class="checkbox" *ngIf="!verifierCategories2(productService.produitMeilleurVenteString)"><input (click)="selectCategories2(productService.produitMeilleurVenteString)" name="filter[]" type="checkbox" value="1" title="Meilleur-Vente" />Meilleur-Vente-Produit</label>
+                     
+                         
+                         <br>
+                         <p> <span class="style-title-resultat">Resultat :</span></p>
+                         
+                         <table class="table table-bordered">
+                             
+                             <thead>
+                                 <tr>
+                                     <th class="text-center">Categorie</th>
+                                     <th class="text-center">Action</th>
+                                 </tr>
+                             </thead>
+                             <tbody>
+                                 <tr *ngFor='let item of listCategories'>
+                                     <td class="text-center">{{item.categorie}}</td>
+                                     <td class="text-center"><button type="button" class="btn btn-danger"  (click)="selectCategories2(item.categorie)" title="Categorie"> supprimer </button></td>
+                                </tr>
+     
+                                 <tr *ngIf='listCategories.length == 0'>
+                                     <td class="text-center">Vide</td>
+                                     <td class="text-center">Vide</td>
+                                 </tr>
+                             </tbody>
+     
+                         </table>
+     
+                         
+                     </fieldset>
+     
+                    <fieldset style="margin-top: 30px;">
+                    
+                        <legend>Image</legend>
+                         
+                            <div class="class-slected">
+                                <div class="form-group">
+                                     <label for="input-company" class="col-sm-2 control-label">image (L:580 px * H:656 px)</label>
+                                     <div class="col-sm-5">
+                                         <input 
+                                         formControlName="file"
+                                         id="file" 
+                                         type="file" 
+                                         class="form-control"
+                                         multiple="" 
+                                         (change)="selectedM($event)">
+          
+                                     </div>
+     
+                                     <div class="col-sm-5" *ngIf="imageSelectedSource ==null">
+                                         <img src="{{userService.baseURL+'/'+imageSelected}}" style="max-width:100%; margin-bottom: 20px;">
+                                     </div>
+                                     <div class="col-sm-5" *ngIf="imageSelectedSource !=null">
+                                        <img src="{{imageSelected}}" style="max-width:100%; margin-bottom: 20px;">
+                                    </div>
+                                </div>
+                            </div>
+                           
+                    </fieldset>
+                    
+                     <div class="form-group" style="border:red solid 2px;" *ngIf="isErreurs">
+                         <p style="color: red; padding: 2px 5px;">
+                           <span *ngFor="let e of erreurString">  {{e}} <br> </span> 
+                         </p>
+                     </div>
+       
+                     <app-loading *ngIf="isLoading"></app-loading>
+     
+                     <div class="buttons">
+                         <div class="pull-right">
+                             <input type="submit" class="btn btn-primary" value="Ajouter" (click)="addProduit()">
+                         </div>
+                     </div>
+                 </form>
+        
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-3 col-sm-4 col-md-pull-9">
+
+            <app-sidebar-enseignant> </app-sidebar-enseignant>
+
+        </div>
+       
+      </div>
+    </div>
+  </section>
+ 
+  <app-footer-formation></app-footer-formation>
+ 
